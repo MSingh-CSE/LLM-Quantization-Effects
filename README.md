@@ -25,6 +25,7 @@ models=("phi-2" "llama-7b" "qwen-3b" "qwen-7b" "mistral-7b")
 quantizations=("4-bit" "8-bit" "32-bit")
 datasets=("boolq" "toxic" "piqa" "hellaswag" "sentiment")
 quant_config="none"
+batch="32"
 
 for dataset in "${datasets[@]}"; do
   for model in "${models[@]}"; do
