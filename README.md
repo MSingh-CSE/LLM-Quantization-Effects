@@ -97,18 +97,33 @@ python analysis_and_viz/correlation.py
 
 If you use this code in your research, please cite our paper:
 
-> Manpreet Singh, & Hassan Sajjad. (2025). Interpreting the Effects of Quantization on LLMs. [https://arxiv.org/abs/2508.16785]
+> Manpreet Singh and Hassan Sajjad. "Interpreting the Effects of Quantization on LLMs." IJCNLP-AACL 2025, Mumbai, India. pp. 2267–2281.
 
 Bibtex:
 ```bibtex
-@misc{singh2025interpretingeffectsquantizationllms,
-      title={Interpreting the Effects of Quantization on LLMs}, 
-      author={Manpreet Singh and Hassan Sajjad},
-      year={2025},
-      eprint={2508.16785},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2508.16785}, 
+@inproceedings{singh-sajjad-2025-interpreting,
+    title = "Interpreting the Effects of Quantization on {LLM}s",
+    author = "Singh, Manpreet  and
+      Sajjad, Hassan",
+    editor = "Inui, Kentaro  and
+      Sakti, Sakriani  and
+      Wang, Haofen  and
+      Wong, Derek F.  and
+      Bhattacharyya, Pushpak  and
+      Banerjee, Biplab  and
+      Ekbal, Asif  and
+      Chakraborty, Tanmoy  and
+      Singh, Dhirendra Pratap",
+    booktitle = "Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics",
+    month = dec,
+    year = "2025",
+    address = "Mumbai, India",
+    publisher = "The Asian Federation of Natural Language Processing and The Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.ijcnlp-long.123/",
+    pages = "2267--2281",
+    ISBN = "979-8-89176-298-5",
+    abstract = "Quantization offers a practical solution to deploy LLMs in resource-constraint environments. However, its impact on internal representations remains understudied, raising questions about the reliability of quantized models. In this study, we employ a range of interpretability techniques to investigate how quantization affects model and neuron behavior. We analyze multiple LLMs under 4-bit and 8-bit quantization. Our findings reveal that the impact of quantization on model calibration is generally minor. Analysis of neuron activations indicates that the number of dead neurons, i.e., those with activation values close to 0 across the dataset, remains consistent regardless of quantization. In terms of neuron contribution to predictions, we observe that smaller full precision models exhibit fewer salient neurons, whereas larger models tend to have more, with the exception of Llama-2-7B. The effect of quantization on neuron redundancy varies across models. Overall, our findings suggest that effect of quantization may vary by model and tasks, however, we did not observe any drastic change which may discourage the use of quantization as a reliable model compression technique."
+}
 }
 ```
 
